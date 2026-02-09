@@ -10,7 +10,7 @@
   </head>
 
   <body>
-      <h2>Simple Calculator</h2>
+      <h2>Calculator</h2>
       
       <form id="calcForm">
           <input type="number" id="num1" placeholder="Enter first number">
