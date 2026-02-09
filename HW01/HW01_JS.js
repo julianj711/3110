@@ -44,20 +44,15 @@ form.addEventListener('submit', (event) => {
     const extraInfo = document.createElement('p');
     extraInfo.id = 'extraInfo';
     extraInfo.textContent = `Operation: ${operation.toUpperCase()}`;
-    extraInfo.style.marginTop = '10px';
-    extraInfo.style.fontStyle = 'italic';
-    extraInfo.style.color = '#666';
-    extraInfo.style.display = 'block';
     //Adds element to DOM
     resultP.appendChild(extraInfo); 
 })
-// Change the background color attribute
+//Change the background color of the result
 toggleButton.addEventListener('click', () => {
-    // Change the style attribute of resultP
     if (resultP.style.backgroundColor === 'lightblue') {
-        resultP.setAttribute('style', resultP.getAttribute('style').replace('background-color: lightblue', 'background-color: lightgreen'));
+        resultP.style.backgroundColor = 'lightgreen';
     } 
     else {
-        resultP.setAttribute('style', resultP.getAttribute('style').replace('background-color: lightgreen', 'background-color: lightblue'));
+        resultP.style.backgroundColor = 'lightblue';
     }
-})
+});

@@ -26,7 +26,8 @@
       
       <p id="result">Result will appear here</p>
       
-      <button id="toggleButton">Toggle Result Background</button>
-  
+      <button id="toggleButton">Toggle Background</button>
+
+      <script src = "HW01/HW01_JS.js"></script>
   </body>
 </html>
