@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="HW01/HW01_style.css">
+    <title>Calculator</title>
+
+  </head>
+
+  <body>
+      <h2>Simple Calculator</h2>
+      
+      <form id="calcForm">
+          <input type="number" id="num1" placeholder="Enter first number">
+          <input type="number" id="num2" placeholder="Enter second number" required>
+          
+          <section>
+              <button type="submit" name="operation" value="add">Add</button>
+              <button type="submit" name="operation" value="subtract">Subtract</button>
+              <button type="submit" name="operation" value="multiply">Multiply</button>
+              <button type="submit" name="operation" value="divide">Divide</button>
+          </section>
+      </form>
+      
+      <p id="result">Result will appear here</p>
+      
+      <button id="toggleButton">Toggle Result Background</button>
+  
+  </body>
+</html>
