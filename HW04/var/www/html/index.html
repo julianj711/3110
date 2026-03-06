@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EditScoreboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+        <h2>Edit Scoreboard</h2>
+
+        <h3>Add A Player</h3>
+        <form id="addForm">
+                <input type="text" id="playerName" placeholder="Player Name">
+                <input type="number" id="playerScore" placeholder="Starting Score">
+                <button type="button" onclick="addPlayer()">Add Player</button>
+        </form>
+
+        <h3>Update player</h3>
+        <input type="number" id="updateIndex" placeholder="Player Index">
+        <input type="number" id="updateScore" placeholder="New Score">
+        <button onclick="updatePlayer()">Update</button>
+
+        <h3>Delete player</h3>
+        <input type="number" id="deleteIndex" placeholder="Player Index">
+        <button onclick="deletePlayer()">Delete</button>
+
+
+        <h3>Scoreboard</h3>
+        <a href="scoreboard.html">View Scoreboard</a>
+
+        <script src = "add_update_delete.js"></script>
+</body>
+</html>
+
+
+
