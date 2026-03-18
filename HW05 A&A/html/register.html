@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    	<meta charset="UTF-8">
+    	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    	<title>Register</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    	<h2>Create New User</h2>
+
+    	<form id="registerForm">
+        	<input type="text" id="regUsername" placeholder="Username">
+        	<input type="password" id="regPassword" placeholder="Password">
+        	<select id="regRole">
+            	<option value="author">Author</option>
+            	<option value="admin">Admin</option>
+        	</select>
+        	<button type="button" onclick="register()">Create User</button>
+    	</form>
+
+    	<p id="registerMessage"></p>
+
+    	<a href="scoreboard.html">View Scoreboard</a>
+	
+	<script src="register.js"></script>
+</body>
+</html>
