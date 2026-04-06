@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    	<meta charset="UTF-8">
+    	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    	<title>Scoreboard</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    	<h1>Scoreboard</h1>
+
+    	<table>
+        	<thead>
+            	<tr>
+                	<th>Rank</th>
+                	<th>Player</th>
+                	<th>Score</th>
+            	</tr>
+        	</thead>
+        	<tbody id="scoreboardBody">
+        	</tbody>
+    	</table>
+
+    	<button onclick="loadScoreboard()">Refresh</button>
+
+    	<button onclick="window.location.href='login.html?redirect=index.html'">Edit Scoreboard</button>
+	
+	<button onclick="window.location.href='login.html?redirect=register.html'">Create Credentials</button>
+
+	<script src="loadScoreboard.js"></script>
+</body>
+</html>
