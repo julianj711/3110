@@ -1,0 +1,49 @@
+{
+  "users": [
+    {
+      "username": "julian_admin",
+      "password": "admin123",
+      "role": "admin"
+    },
+    {
+      "username": "hemant_admin",
+      "password": "adminPass",
+      "role": "admin"
+    },
+    {
+      "username": "julian_author",
+      "password": "author123",
+      "role": "author"
+    },
+    {
+      "username": "hemant_author",
+      "password": "authorPass",
+      "role": "author"
+    },
+    {
+      "username": "jas",
+      "password": "Jas123",
+      "role": "author"
+    },
+    {
+      "username": "jas",
+      "password": "jas123",
+      "role": "author"
+    },
+    {
+      "username": "Jasy",
+      "password": "jasy123",
+      "role": "author"
+    },
+    {
+      "username": "test",
+      "password": "test123",
+      "role": "author"
+    },
+    {
+      "username": "jasy",
+      "password": "jasy123",
+      "role": "author"
+    }
+  ]
+}
