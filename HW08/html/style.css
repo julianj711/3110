@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Share+Tech+Mono&display=swap');
+
+:root {
+    --black: #0a0a0a;
+    --dark: #111111;
+    --card: #161616;
+    --green: #00ff41;
+    --green-dim: #00cc33;
+    --green-glow: rgba(0, 255, 65, 0.3);
+    --green-faint: rgba(0, 255, 65, 0.05);
+    --text: #cccccc;
+    --border: rgba(0, 255, 65, 0.2);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Share Tech Mono', monospace;
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    background-color: var(--black);
+    background-image:
+        linear-gradient(rgba(0, 255, 65, 0.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(0, 255, 65, 0.03) 1px, transparent 1px);
+    background-size: 40px 40px;
+    color: var(--text);
+    min-height: 100vh;
+}
+
+h1 {
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 900;
+    font-size: 2.8rem;
+    color: var(--green);
+    text-transform: uppercase;
+    letter-spacing: 6px;
+    text-shadow: 0 0 20px var(--green-glow), 0 0 60px var(--green-glow);
+    margin-bottom: 8px;
+}
+
+h2 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1rem;
+    color: var(--green-dim);
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    margin: 32px 0 12px;
+    border-left: 3px solid var(--green);
+    padding-left: 12px;
+}
+
+p {
+    color: var(--text);
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+/* --- INPUTS --- */
+input[type="text"],
+input[type="number"] {
+    background: var(--card);
+    border: 1px solid var(--border);
+    color: var(--green);
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 0.95rem;
+    padding: 10px 14px;
+    outline: none;
+    width: 100%;
+    margin-bottom: 10px;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus {
+    border-color: var(--green);
+    box-shadow: 0 0 12px var(--green-glow);
+}
+
+input::placeholder {
+    color: #444;
+}
+
+/* --- BUTTONS --- */
+button {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding: 10px 24px;
+    background: transparent;
+    color: var(--green);
+    border: 1px solid var(--green);
+    cursor: pointer;
+    transition: background 0.2s, box-shadow 0.2s, color 0.2s;
+    margin-top: 4px;
+}
+
+button:hover {
+    background: var(--green);
+    color: var(--black);
+    box-shadow: 0 0 20px var(--green-glow);
+}
+
+/* --- TABLE --- */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 16px;
+    font-family: 'Share Tech Mono', monospace;
+}
+
+thead tr {
+    border-bottom: 2px solid var(--green);
+}
+
+th {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 0.7rem;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--green);
+    padding: 12px 16px;
+    text-align: left;
+}
+
+td {
+    padding: 12px 16px;
+    border-bottom: 1px solid rgba(0, 255, 65, 0.08);
+    color: var(--text);
+    font-size: 0.95rem;
+}
+
+tbody tr {
+    transition: background 0.15s;
+}
+
+tbody tr:hover {
+    background: var(--green-faint);
+}
+
+tbody tr:first-child td {
+    color: var(--green);
+    font-weight: bold;
+    text-shadow: 0 0 8px var(--green-glow);
+}
+
+/* --- LINKS --- */
+a {
+    color: var(--green-dim);
+    display: inline-block;
+    margin-top: 28px;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 0.75rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: color 0.2s, border-color 0.2s;
+}
+
+a:hover {
+    color: var(--green);
+    border-bottom-color: var(--green);
+}
+
+/* --- CARDS / SECTIONS --- */
+.section {
+    background: var(--card);
+    border: 1px solid var(--border);
+    padding: 20px;
+    margin-bottom: 20px;
+}
